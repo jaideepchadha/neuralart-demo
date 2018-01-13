@@ -8,8 +8,8 @@ import importlib
 import nstyle
 
 
-ACCESS_KEY = 'AKIAJ2SS5MZYD3ADH6QA'
-SECRET_KEY = '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'
+ACCESS_KEY = ''
+SECRET_KEY = ''
 INPUT_BUCKET_NAME = 'ai-conclave'
 OUTPUT_BUCKET_NAME = 'ai-conclave-output'
 KEY = 'conclave-bucket/newtest.jpg'
