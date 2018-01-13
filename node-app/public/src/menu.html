@@ -1,0 +1,21 @@
+<div class="mainmenu" ng-controller="ProductCategoriesController as pcc">
+    <nav>
+        <ul id="nav">
+            <li class="current"><a href="#/">HOME</a>
+            </li>
+            <li ng-repeat="category in pcc.productCategories"><a href="#/categories/{{category.Key}}/products">{{category.Key}}</a>
+                <div class="megamenu">
+                    <div class="megamenu-list clearfix">
+                        <span ng-repeat="subCategory in category.Categories">											
+                                <a href="#/categories/{{category.Key}}_{{subCategory.Key}}/products" class="mega-title">{{subCategory.Key}}</a>
+                                <a ng-repeat="subSubCategory in subCategory.Categories" href="#/categories/{{category.Key}}_{{subCategory.Key}}_{{subSubCategory.Key}}/products">{{subSubCategory.Key}}</a>
+                        </span>
+                    </div>
+                </div>
+            </li>
+
+            <li><a href="#/profile">About Me</a></li>
+            <li><a href="#/contact">Contact</a></li>
+        </ul>
+    </nav>
+</div>

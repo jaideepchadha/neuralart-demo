@@ -1,0 +1,530 @@
+/* Toolbar area */
+
+.menu {
+    background-color: #ffcc33;
+    border: none;
+    width: 36px;
+}
+
+.menu:hover {
+    background-color: #FF6600 !important;
+}
+
+md-toolbar h3 {
+    margin: auto;
+    font-weight: 500;
+}
+
+
+/* Sidenav area */
+
+md-list-item > button {
+    width: 100%;
+    text-align: left !important;
+    height: 70px;
+    ;
+}
+
+md-icon.avatar {
+    margin-right: 20px;
+}
+
+md-list .md-button.selected {
+    color: #03a9f4;
+}
+
+md-sidenav > md-toolbar {
+    height: 64px;
+}
+
+md-list-item {
+    overflow: hidden;
+}
+
+md-icon {
+    fill: #533419;
+}
+
+
+/* Primary content area */
+
+#content {
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 5px;
+}
+
+#content .md-button.contact {
+    background-color: transparent;
+    border: none;
+    width: 48px;
+    height: 48px;
+    margin: 8px auto 16px 0;
+    position: absolute;
+    top: 10px;
+    right: 40px;
+}
+
+#content md-icon.avatar {
+    margin-top: 10px;
+}
+
+#content .md-button.contact > md-icon {
+    fill: black;
+    width: 36px;
+    height: 36px;
+}
+
+#content .md-button.contact:active > md-icon {
+    background-color: #dadada;
+    border-radius: 75%;
+    padding: 4px;
+    transition: all 100ms ease-out 30ms;
+}
+
+
+/* Utils */
+
+/* Typography support coming in 0.8.0 */
+
+.avatar {
+    position: relative;
+    width: 54px;
+    height: 54px;
+    border: 1px solid #ddd;
+    border-radius: 50%;
+    display: inline-block;
+    overflow: hidden;
+    margin: 0px;
+    vertical-align: middle;
+}
+
+md-bottom-sheet md-icon {
+    margin-right: 20px;
+}
+
+span.name {
+    font-weight: bold;
+    font-size: 1.1em;
+    padding-left: 5px;
+}
+
+.tl-banner {
+    background-image: url('../img/banner.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+md-toolbar:not(.md-menu-toolbar) {
+    background-color: #FF6600 !important;
+    color: rgba(255, 255, 255, 0.87);
+}
+
+.slide-animation.ng-enter,
+.slide-animation.ng-leave {
+    -webkit-transition: all linear 0.5s;
+    -moz-transition: all linear 0.5s;
+    -o-transition: all linear 0.5s;
+    transition: all linear 0.5s;
+    opacity: 0;
+    left: 100%;
+}
+
+.slide-animation.ng-enter.ng-enter-active,
+.slide-animation.ng-leave {
+    left: 0;
+    opacity: 1;
+}
+
+.slide-animation.ng-leave.ng-leave-active {
+    left: -100%;
+    opacity: 0;
+}
+
+.vertical-flip.ng-leave {
+    -webkit-transform: rotateY(0deg);
+    -moz-transform: rotateY(0deg);
+    -ms-transform: rotateY(0deg);
+    -o-transform: rotateY(0deg);
+    transform: rotateY(0deg);
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -ms-backface-visibility: hidden;
+    -o-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-transition-property: -webkit-transform;
+    -moz-transition-property: -moz-transform;
+    -o-transition-property: -o-transform;
+    transition-property: transform;
+    -webkit-transition-duration: 0.5s;
+    -moz-transition-duration: 0.5s;
+    -o-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+    -webkit-transform-origin: center center;
+    -moz-transform-origin: center center;
+    -ms-transform-origin: center center;
+    -o-transform-origin: center center;
+    transform-origin: center center;
+    top: 0px;
+    left: 0px;
+    z-index: 20;
+}
+
+.vertical-flip.ng-leave-active {
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -ms-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+    z-index: 10;
+}
+
+.vertical-flip.ng-enter {
+    -webkit-transform: rotateY(-180deg);
+    -moz-transform: rotateY(-180deg);
+    -ms-transform: rotateY(-180deg);
+    -o-transform: rotateY(-180deg);
+    transform: rotateY(-180deg);
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -ms-backface-visibility: hidden;
+    -o-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-transition-property: -webkit-transform;
+    -moz-transition-property: -moz-transform;
+    -o-transition-property: -o-transform;
+    transition-property: transform;
+    -webkit-transition-duration: 0.5s;
+    -moz-transition-duration: 0.5s;
+    -o-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+    -webkit-transform-origin: center center;
+    -moz-transform-origin: center center;
+    -ms-transform-origin: center center;
+    -o-transform-origin: center center;
+    transform-origin: center center;
+    top: 0px;
+    left: 0px;
+    z-index: 10;
+}
+
+.vertical-flip.ng-enter-active {
+    -webkit-transform: rotateX(0deg);
+    -moz-transform: rotateX(0deg);
+    -ms-transform: rotateX(0deg);
+    -o-transform: rotateX(0deg);
+    transform: rotateX(0deg);
+    z-index: 20;
+}
+
+@-moz-keyframes bounce {
+    0%,
+    20%,
+    50%,
+    80%,
+    100% {
+        -moz-transform: translateY(0);
+        transform: translateY(0);
+    }
+    40% {
+        -moz-transform: translateY(-30px);
+        transform: translateY(-30px);
+    }
+    60% {
+        -moz-transform: translateY(-15px);
+        transform: translateY(-15px);
+    }
+}
+
+@-webkit-keyframes bounce {
+    0%,
+    20%,
+    50%,
+    80%,
+    100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+    40% {
+        -webkit-transform: translateY(-30px);
+        transform: translateY(-30px);
+    }
+    60% {
+        -webkit-transform: translateY(-15px);
+        transform: translateY(-15px);
+    }
+}
+
+@keyframes bounce {
+    0%,
+    20%,
+    50%,
+    80%,
+    100% {
+        -moz-transform: translateY(0);
+        -ms-transform: translateY(0);
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+    40% {
+        -moz-transform: translateY(-30px);
+        -ms-transform: translateY(-30px);
+        -webkit-transform: translateY(-30px);
+        transform: translateY(-30px);
+    }
+    60% {
+        -moz-transform: translateY(-15px);
+        -ms-transform: translateY(-15px);
+        -webkit-transform: translateY(-15px);
+        transform: translateY(-15px);
+    }
+}
+
+.bounce {
+    -moz-animation: bounce 2s infinite;
+    -webkit-animation: bounce 2s infinite;
+    animation: bounce 2s infinite;
+}
+
+.bounce.odd {
+    -moz-animation: bounce 2s 1;
+    -webkit-animation: bounce 2s 1;
+    animation: bounce 2s 1;
+}
+
+.bounce.even {
+    -moz-animation: bounce 3s 1;
+    -webkit-animation: bounce 3s 1;
+    animation: bounce 3s 1;
+}
+
+.circle-icons {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin: 0px;
+    vertical-align: middle;
+    text-align: center;
+    background-color: #FF6600 !important;
+    position: absolute;
+    right: 40px;
+    top: 10px;
+    cursor: pointer;
+    background-size: 20px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.circle-icons:hover {
+    background-color: #ffcc33 !important;
+    background-size: 25px;
+}
+
+.icon-1 {
+    right: CALC(0px + 40px);
+    background-image: url('../img/cart.png');
+}
+
+.icon-2 {
+    right: CALC(40px + 5px + 40px);
+    background-image: url('../img/men.png');
+}
+
+.icon-3 {
+    right: CALC(80px + 10px + 40px);
+    background-image: url('../img/women.png');
+}
+
+.circle-icon-div {
+    position: absolute;
+    top: 5px;
+    right: 40px;
+}
+
+.main-body {
+    min-height: CALC(100% - 30px);
+    padding-top: 170px;
+}
+
+
+/*
+header,
+footer {
+    opacity: 0.3;
+}
+
+header:hover,
+footer:hover {
+    opacity: 1;
+}
+*/
+
+header {
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    background: white;
+}
+
+header.smaller .header-title {
+    font-size: 30px;
+    margin-top: 10px;
+}
+
+.logo {
+    width: 75px;
+    padding: 10px 0px 10px 15px;
+}
+
+.tl_logo {
+    width: 135px;
+    padding: 10px 0px;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.header-title {
+    margin-top: 30px;
+    font-size: 50px;
+    color: #701e6c;
+    font-weight: bold;
+    font-variant: small-caps;
+    text-shadow: #abbaab 3px 3px 5px;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.footer {
+    background-color: #1B2755;
+    border-color: #e7e7e7;
+}
+
+body {
+    height: CALC(100% - 60px)
+}
+
+html {
+    height: 100%;
+}
+
+.full {
+    /*    margin-top: 40px;*/
+    /*    position: absolute;*/
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.slide-image {
+    width: 100% !important;
+}
+
+body {
+    font-family: 'Segoe UI Light';
+    width: 100%;
+}
+
+
+.banner-content {
+    height: 500px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: 100%;
+}
+
+.banner1 {
+    background-image: url('../img/banner1.jpg');
+}
+
+.banner2 {
+    background-image: url('../img/banner2.jpg');
+}
+
+.banner3 {
+    background-image: url('../img/banner3.jpg');
+}
+
+.banner4 {
+    background-image: url('../img/banner4.jpg');
+}
+
+.pe-7s-cart {
+    content: '';
+}
+
+.pe-7s-cart:before {
+    font-family: FontAwesome;
+    content: "\f217";
+    display: inline-block;
+    padding: 0px 10px 2px 0px;
+    vertical-align: middle;
+    color: grey;
+    font-size: xx-large;
+}
+
+
+/*md-card css*/
+
+.md-card {
+    background: #fff;
+    border-radius: 2px;
+    display: inline-block;
+    margin: 1rem;
+    position: relative;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
+}
+
+.md-card:hover {
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+.item-bottom: {
+    padding-bottom: 5px !important;
+}
+
+.jslider div.jslider-bg i.range {
+    background-position: 0 -10px !important;
+}
+
+.product-action-icons {
+    font-size: 25px;
+    color: ivory;
+}
+
+.single-product .button-container ul li a:hover .product-action-icons,
+.product-action-icons:hover {
+    color: black;
+}
+
+.cartImage {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.cart-text {
+    color: #cf5c7c;
+}
+
+.pretty-load-overlay {
+    opacity: 0;
+}
+
+.pretty-load-loading .pretty-load-overlay {
+    opacity: 1;
+    transition: opacity 0.5s ease;
+}
+
+.pretty-load-completed .pretty-load-overlay {
+    opacity: 0;
+    transition: opacity 1.7s ease;
+}

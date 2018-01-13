@@ -1,0 +1,16 @@
+<div ng-controller="HomeController as hc" class="container">
+    <div class="col-md-4">&nbsp;</div>
+    <div ng-click="hc.toogleLoop()" class="md-card col-xs-12 col-md-4 text-center" style="padding:10px">
+        <md-tooltip>Cick to toogle image loops!</md-tooltip>
+        <img pretty-load src="{{hc.imageurl}}" width="100%" alt="Waiting For Image.." />
+    </div>
+    <div class="row" class="text-center">
+        <div class="col-md-4"></div>
+        <div class="col-md-4">
+            <div class="md-card col-xs-2 col-md-2" ng-repeat="image in hc.images track by $index" style="padding:2px;background-color: black;cursor: pointer">
+                <md-tooltip>Cick to view image.</md-tooltip>
+                <img ng-click="hc.loadThisImage(image)" pretty-load src="{{image}}" width="100%" alt="Loading.." />
+            </div>
+        </div>
+    </div>
+</div>

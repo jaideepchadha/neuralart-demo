@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>AWS</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no" />
+    <link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Roboto:400,500,700,400italic'>
+    <link rel='stylesheet' href="bootstrap/dist/css/bootstrap.min.css" />
+    <link rel='stylesheet' href="angular-ui-bootstrap/dist/ui-bootstrap-csp.css" />
+    <!--    <link rel="stylesheet" href="angular-material/angular-material.css" />-->
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="assets/css/app.css" />
+    <link rel="stylesheet" href="assets/css/custom.css" />
+    <link rel='stylesheet' href="ng-slider/dist/css/ng-slider.min.css" />
+
+    <style type="text/css">
+        [ng\:cloak],
+        [ng-cloak],
+        [data-ng-cloak],
+        [x-ng-cloak],
+        .ng-cloak,
+        .x-ng-cloak {
+            display: none !important;
+        }
+
+    </style>
+</head>
+
+<!--<body ng-app="TL" layout="row" ng-controller="UserController as ul" ng-cloak>-->
+
+<body ng-app="TL" ng-cloak ng-controller="globalController as gc">
+    <nav class="navbar navbar-light bg-light" style="background-color:#232f3e;border-radius: 0px;">
+        <img class="logo" src="assets/img/logo.png" alt="AWS Logo" />
+    </nav>
+    <div class="container" style="min-height:CALC(100vh - 121px)">
+        <div ng-view autoscroll="true"></div>
+    </div>
+    <footer class="footer text-right" style="background-color:#141414;color:white;border-radius: 0px;padding:5px 15px;">
+        <h5>Powered By : AWS</h5>
+    </footer>
+    <script src="angular/angular.js"></script>
+    <script src="jquery/dist/jquery.js"></script>
+    <script src="bootstrap/dist/js/bootstrap.js"></script>
+    <script src="angular-ui-bootstrap/dist/ui-bootstrap.js"></script>
+    <script src="angular-ui-bootstrap/dist/ui-bootstrap-tpls.js"></script>
+    <script src="ng-slider/dist/ng-slider.min.js"></script>
+    <script src="angular-route/angular-route.js"></script>
+    <script src="angular-animate/angular-animate.js"></script>
+    <script src="angular-aria/angular-aria.js"></script>
+    <script type="text/javascript" src="angular-material/angular-material.js"></script>
+    <script type="text/javascript" src="angular-pretty-load/dist/angular-pretty-load.min.js"></script>
+
+    <script type="text/javascript" src="src/shared/services/index.js"></script>
+    <script type="text/javascript" src="src/shared/services/localStorageService.js"></script>
+    <script type="text/javascript" src="src/shared/services/httpService.js"></script>
+    <script type="text/javascript" src="src/shared/index.js"></script>
+    <script type="application/javascript" src="configuration.js"></script>
+    <script type="application/javascript" src="./src/util/index.js"></script>
+    <script type="application/javascript" src="./src/util/globalController.js"></script>
+    <script src="./src/home/Home.js"></script>
+    <script src="./src/home/HomeController.js"></script>
+    <script type="text/javascript" src="./src/app-angular.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+
+</body>
+
+</html>
